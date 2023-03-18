@@ -1,0 +1,82 @@
+  
+<form  method="post" id="form1" onsubmit="delayRefresh(event)">
+    <div class="container">
+        
+        <img class="col-sm-12" src="/cf1.png" id="img1" alt="">
+        <div class="row">
+            <div class="col-sm-6" id="name1">Enter your Name:
+                <input type="text" id="in-name" name="User_name" placeholder="Your Name">                  
+            </div>
+            <div class="col-sm-6" id="dob1">Enter your DOB:
+                <input type="text" id="in-dob" name="User_DOB" placeholder="dd/mm/yyyy">
+            </div>
+            
+            <h2 class="col-sm-12" id="C_names">Enter the Name and DOB of your Friends</h2>
+            
+            
+            <div class="col-sm-6" id="f-name1">1:
+                <input type="text" id="in-name1" name="Friend1" placeholder="Name 1">
+                <input type="text" id="in-dob1"  placeholder="dd/mm/yyyy">
+            </div>
+            <div class="col-sm-6" id="f-name2">2:
+                <input type="text" id="in-name2" name="Friend2" placeholder="Name 2">
+                <input type="text" id="in-dob2" placeholder="dd/mm/yyyy">
+            </div>
+            <div class="col-sm-6" id="f-name3">3:
+                <input type="text" id="in-name3" name="Friend3" placeholder="Name 3">
+                <input type="text" id="in-dob3" placeholder="dd/mm/yyyy">
+            </div>
+            <div class="col-sm-6" id="f-name4">4:
+                <input type="text" id="in-name4" name="Friend4" placeholder="Name 4">
+                <input type="text" id="in-dob4" placeholder="dd/mm/yyyy">
+            </div>  
+
+            <button id="submit" >Submit</button>
+
+            {{!-- <p><a href="/result" id="submit">Submit</a></p> --}}
+           
+            <button id="rst" >Reset</button> 
+               <div class="col-sm-12" id="p2"><h2>Your Zodiac Sign: </h2><h1 id="p3" name="user_Zsign"></h1></div>
+            <div class="col-sm-12" id="p1"><h1>Zodiac sign of your Friends</h1></div>
+
+            <div class="col-sm-6">
+                <h2 id="namr-res1"></h2>
+            </div>
+            <div class="col-sm-6">
+                <h2 id="z-sign1"></h2>
+            </div>
+            <div class="col-sm-6">
+                <h2 id="namr-res2"></h2>
+            </div>
+            <div class="col-sm-6">
+                <h2 id="z-sign2"></h2>
+            </div>
+            <div class="col-sm-6">
+                <h2 id="namr-res3"></h2>
+            </div>
+            <div class="col-sm-6">
+                <h2 id="z-sign3"></h2>
+
+            </div>
+            <div class="col-sm-6">
+                <h2 id="namr-res4"></h2>
+
+            </div>
+            <div class="col-sm-6">
+                <h2 id="z-sign4"></h2>
+
+            </div>
+            <div class="col-sm-12">
+                <h1 id="result" name="result"></h1>
+    </div>       
+    </div>
+</div> 
+ </form>
+<script>
+function delayRefresh(event) {
+  setTimeout(function() {
+    location.reload(); // Reload the page after a delay
+  }, 000); // Delay in milliseconds (3 seconds in this example)
+}
+
+</script>
